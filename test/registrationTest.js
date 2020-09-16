@@ -66,3 +66,12 @@ describe("Phone Number validator ", function () {
     assert.isFalse(userRegistration.mobileNoValidator("91 887911"));
   });
 });
+
+describe("Password validator ", function () {
+  it("returns true if password is valid", function () {
+    assert.isTrue(userRegistration.passwordValidator("qwsdefnfq"));
+  });
+  it("returns false if password is less than 8 digit", function () {
+    assert.isFalse(userRegistration.emailValidator("hehdc"));
+  });
+});

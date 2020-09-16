@@ -13,4 +13,8 @@ module.exports = {
     let regexConst = new RegExp(/^[0-9]{2}[ ][0-9]{10}/);
     return regexConst.test(number);
   },
+  passwordValidator: function (password) {
+    let regexConst = new RegExp(/^[A-Za-z0-9]{8,}/);
+    return regexConst.test(password);
+  },
 };
