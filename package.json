@@ -1,0 +1,23 @@
+{
+  "name": "user-registration-js",
+  "version": "1.0.0",
+  "description": "User registration app",
+  "main": "userRegistration.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshugharat/User-Registration-JS.git"
+  },
+  "author": "himanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshugharat/User-Registration-JS/issues"
+  },
+  "homepage": "https://github.com/himanshugharat/User-Registration-JS#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
