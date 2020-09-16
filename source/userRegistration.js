@@ -14,7 +14,9 @@ module.exports = {
     return regexConst.test(number);
   },
   passwordValidator: function (password) {
-    let regexConst = new RegExp(/(?=.*[A-Z].*)(?=.*[0-9].*)[A-Za-z0-9]{8,}/);
+    let regexConst = new RegExp(
+      /(?=.*[A-Z].*)(?=.*[0-9].*)([a-zA-Z0-9]{4,}[!@#$%^&*()_+][a-zA-Z0-9]{3,})/
+    );
     return regexConst.test(password);
   },
 };
