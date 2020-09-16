@@ -69,12 +69,15 @@ describe("Phone Number validator ", function () {
 
 describe("Password validator ", function () {
   it("returns true if password is valid", function () {
-    assert.isTrue(userRegistration.passwordValidator("Qwsdefnfq"));
+    assert.isTrue(userRegistration.passwordValidator("Qwsdefnfq12"));
   });
   it("returns false if password is less than 8 chars", function () {
-    assert.isFalse(userRegistration.emailValidator("hehdc"));
+    assert.isFalse(userRegistration.passwordValidator("hehdc"));
   });
   it("returns false if password contains no upper case but 8 char long ", function () {
-    assert.isFalse(userRegistration.emailValidator("qwertyuio"));
+    assert.isFalse(userRegistration.passwordValidator("qwertyuio"));
+  });
+  it("returns false if password contains no digit but has upper case and 8 char long ", function () {
+    assert.isFalse(userRegistration.passwordValidator("Qwertyuio"));
   });
 });
